@@ -4,6 +4,9 @@ import Signup from '../users/components/Signup.vue'
 import AllSubscriptions from '../subscriptions/component/AllSubscriptions.vue'
 import Active_Inactive from '../subscriptions/component/SubscriptionsActives.vue'
 import CreateCustomer from '../subscriptions/component/CreateCustomer.vue'
+import SubscriberInformation from '../subscriptions/component/SubscriberInformation.vue'
+import EditSubscription from '../subscriptions/component/EditSubscription.vue'
+
 const routes=[
 
 {
@@ -30,6 +33,16 @@ const routes=[
     path: '/create-customer',
     name: 'create-customer',
     component: CreateCustomer,
+},
+{
+    path: '/subscriber-information/:uuid',
+    name: 'subscriber-information',
+    component: SubscriberInformation,
+},
+{
+    path: '/edit/:uuid',
+    name: 'Edit',
+    component: EditSubscription,
 },
 
 ];

@@ -130,7 +130,7 @@ const loginComponent = new LoginComponent();
 <style scoped>
 .gradient-custom {
     background: #6a11cb;
-    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
-    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+    background: -webkit-linear-gradient(to right, rgba(130, 35, 13, 1));
+    background: linear-gradient(to right, rgba(130, 35, 13,1), rgba(130, 35, 13, 1))
 }
 </style>

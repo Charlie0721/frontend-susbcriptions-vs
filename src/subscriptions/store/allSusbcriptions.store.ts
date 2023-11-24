@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import { AllSubscriptionsService } from '../../users/services/AllSuscriptions.service';
+import { AllSubscriptionsService } from '../services/AllSuscriptions.service';
 const allSubscriptionsService = new AllSubscriptionsService();
 export const useAllSuscriptionsStore = defineStore('suscriptonStore', {
 
