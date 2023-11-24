@@ -88,9 +88,5 @@ const checkSubscriptionsComponent = new CheckSubscriptionsComponent();
     font-size: 1rem;
 }
 
-/* .gradient-custom {
 
-    background: -webkit-linear-gradient(to right, rgba(130, 35, 13, 1));
-    background: linear-gradient(to right, rgba(130, 35, 13, 1), rgba(130, 35, 13, 1))
-} */
 </style>

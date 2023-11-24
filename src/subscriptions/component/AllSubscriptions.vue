@@ -103,5 +103,83 @@ const filteredSubscriptions = computed(() => {
   });
 });
 </script>
+<style scoped>
+/* Estilos generales para las tablas */
+.table-container {
+  overflow-x: auto; /* Agregado: permitir el desplazamiento horizontal en dispositivos pequeños */
+  border: 1px solid rgb(130, 35, 13);
+}
 
-<style scoped></style>
+.table {
+  width: 100%;
+  color: rgb(130, 35, 13);
+  border-collapse: collapse;
+  font-family: 'Roboto', sans-serif;
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid rgb(130, 35, 13);
+  font-family: 'Roboto', sans-serif;
+}
+
+.table thead th {
+  background-color: rgb(130, 35, 13);
+  color: #fff;
+  border-color: rgb(130, 35, 13);
+}
+
+/* Estilos para las filas impares */
+.table tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+/* Estilos para los botones de acción */
+.btn-dark {
+  background-color: rgb(130, 35, 13);
+  color: #fff;
+  border: 1px solid rgb(130, 35, 13);
+  transition: background-color 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #8c250d;
+  border: 1px solid #8c250d;
+}
+
+/* Estilos para los títulos */
+.h1 {
+  color: rgb(130, 35, 13);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Añadido: Estilos específicos para dispositivos pequeños */
+@media (max-width: 768px) {
+  .table {
+    display: block;
+  }
+
+  .table thead,
+  .table tbody,
+  .table th,
+  .table td,
+  .table tr {
+    display: block;
+  }
+
+  .table tbody tr {
+    margin-bottom: 10px;
+  }
+
+  .table tbody td {
+    text-align: left;
+    padding-left: 15px;
+    border: none;
+  }
+}
+</style>
+
+
