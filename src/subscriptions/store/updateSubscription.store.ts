@@ -10,16 +10,13 @@ export const useUpdateSubscriptionStore = defineStore('updateSubscriptionStore',
 
     state: () => {
         return {
-
             updateSubcription: {} as UpdateSubscriptionInterface,
             subscriptor: {} as GetSubscriptorDataInterface,
             uuid: '' as string,
             status: 0 as number
-
         }
     },
     actions: {
-
         async getOne(uuid: string) {
             try {
                 this.uuid = uuid
@@ -29,7 +26,6 @@ export const useUpdateSubscriptionStore = defineStore('updateSubscriptionStore',
             } catch (error) {
                 console.log(error);
             }
-
         },
         async update(uuid: string, data: UpdateSubscriptionInterface){
 
@@ -43,11 +39,7 @@ export const useUpdateSubscriptionStore = defineStore('updateSubscriptionStore',
             } catch (error) {
                 console.log(error)
             }
-
         }
-
-
-
     }
 
 })
